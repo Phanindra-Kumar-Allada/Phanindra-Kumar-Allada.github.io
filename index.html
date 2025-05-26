@@ -1,39 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PhanindraKumarAllada | Portfolio</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; margin: 0; padding: 0; background-color: #f4f4f4; }
-        header { background: #333; color: white; padding: 15px; font-size: 24px; }
-        .container { padding: 20px; }
-        .project { background: white; margin: 15px auto; padding: 15px; max-width: 600px; border-radius: 8px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
-        .contact { margin-top: 20px; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Phanindra Kumar Allada</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #0d1117;
+      color: #c9d1d9;
+    }
+    nav {
+      background-color: #161b22;
+      padding: 1rem 2rem;
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid #30363d;
+    }
+    nav a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover { text-decoration: underline; }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    .hero p {
+      color: #58a6ff;
+      font-size: 1.25rem;
+    }
+    section {
+      margin: 3rem 0;
+    }
+    h2 {
+      color: #fff;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .projects-grid {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .project {
+      flex: 1 1 30%;
+      background-color: #161b22;
+      border-radius: 8px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .project img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .project p {
+      margin: 0.5rem;
+      color: #c9d1d9;
+    }
+    .logos {
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .logos img { height: 32px; }
+    .contact-icons {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 1rem;
+    }
+    .contact-icons a {
+      color: #58a6ff;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+  </style>
 </head>
 <body>
-    <header>Phanindra Kumar Allada</header>
-    <div class="container">
-        <h2>About Me</h2>
-        <p>Robotics & Software Engineer | Computer Vision | Automation</p>
-        
-        <h2>Projects</h2>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#publications">Publications</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section class="hero">
+      <h1>Phanindra Kumar Allada</h1>
+      <p>Building the future of autonomy</p>
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a robotics engineer specializing in autonomous systems, sensor integration, and motion planning. Passionate about advancing robotics and automation technologies.</p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <p><strong>Arizona State University</strong><br>Robotics Engineer<br>Jan 2024 – Present</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
         <div class="project">
-            <h3>Paripreksya SAR Robot</h3>
-            <p>Multi-terrain search & rescue robot with LiDAR, image processing, and autonomous navigation.</p>
+          <img src="https://via.placeholder.com/300x160?text=Paripreksya" alt="Paripreksya">
+          <p>Paripreksya</p>
         </div>
         <div class="project">
-            <h3>Automated Barcode-Scanning Workstation</h3>
-            <p>Industrial automation system for barcode-based production line optimization.</p>
+          <img src="https://via.placeholder.com/300x160?text=Pose+Estimation" alt="Pose Estimation">
+          <p>Motion tracking for smarter workouts</p>
         </div>
         <div class="project">
-            <h3>Real-time Pose Estimation</h3>
-            <p>Computer vision-based motion tracking system for exercise classification.</p>
+          <img src="https://via.placeholder.com/300x160?text=Neural+A%2A+Path+Planning" alt="Neural A* Path Planning">
+          <p>Neural A* path planning</p>
         </div>
-        
-        <h2>Contact</h2>
-        <p class="contact">Email: phanindrakumarallada@gmail.com | <a href="https://github.com/Phanindra-Kumar-Allada">GitHub</a> | <a href="https://linkedin.com/in/phanindra-kumar-allada">LinkedIn</a></p>
-    </div>
+      </div>
+    </section>
+
+    <section id="publications">
+      <h2>Publications</h2>
+      <div class="logos">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/20/IEEE_logo.svg" alt="IEEE">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/39/Springer_Logo.svg" alt="Springer">
+      </div>
+    </section>
+
+    <section id="certifications">
+      <h2>Certifications</h2>
+      <p>Udacity, Coursera, ASTESJ Reviewer</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-icons">
+        <a href="mailto:phanindrakumarallada@gmail.com"><img src="https://img.icons8.com/ios-glyphs/30/58a6ff/email.png"/> Email</a>
+        <a href="https://www.linkedin.com/in/phanindra-kumar-allada" target="_blank"><img src="https://img.icons8.com/ios-filled/30/58a6ff/linkedin.png"/> LinkedIn</a>
+        <a href="https://github.com/Phanindra-Kumar-Allada" target="_blank"><img src="https://img.icons8.com/ios-glyphs/30/58a6ff/github.png"/> GitHub</a>
+        <a href="resume/Phanindra_Kumar_Allada_Resume.pdf" target="_blank"><img src="https://img.icons8.com/ios-filled/30/58a6ff/resume.png"/> Resume</a>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
