@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Phanindra Kumar Allada</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 <body>
   <nav>
@@ -57,22 +58,18 @@
     <section id="projects">
       <h2>Projects</h2>
       <div class="projects-grid">
-
         <div class="project">
-          <img src="assets/images/paripreksya.gif" alt="Paripreksya" />
+          <video src="media/paripreksya.mp4" autoplay loop muted></video>
           <p><strong>Paripreksya</strong><br />Search and Rescue Robot with LiDAR, Camera, and Flipper Arms</p>
         </div>
-
         <div class="project">
-          <video src="assets/videos/pose_estimation.mp4" controls muted loop></video>
-          <p><strong>Real-time Pose Estimation</strong><br />Exercise classification using pose landmarks</p>
+          <img src="media/pose_estimation.gif" alt="Pose Estimation" />
+          <p><strong>Real-time Pose Estimation</strong><br />Exercise recognition using MobileVNet and OpenCV</p>
         </div>
-
         <div class="project">
-          <img src="assets/images/neural_astar.png" alt="Neural A*" />
-          <p><strong>Neural A* Path Planning</strong><br />Combines A* search with learned cost heuristics</p>
+          <img src="media/neural_astar.gif" alt="Neural A* Path Planning" />
+          <p><strong>Adaptive Path Planning</strong><br />Neural A* search for cluttered environments</p>
         </div>
-
       </div>
     </section>
 
@@ -92,12 +89,28 @@
     <section id="contact">
       <h2>Contact</h2>
       <div class="contact-icons">
-        <a href="mailto:phanindra@example.com" target="_blank" title="Email">📧</a>
-        <a href="https://linkedin.com/in/phanindra-kumar" target="_blank" title="LinkedIn">💼</a>
-        <a href="https://github.com/Phanindra-Kumar" target="_blank" title="GitHub">💻</a>
-        <a href="assets/resume/Phanindra_Kumar_Allada_Resume.pdf" target="_blank" title="Resume">📄</a>
+        <a href="mailto:phanindra@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
+        <a href="https://linkedin.com/in/phanindra-kumar" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Phanindra-Kumar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://scholar.google.com/phanindra" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
+        <a href="resume/Phanindra_Kumar_Allada_Resume.pdf" target="_blank" title="Resume"><i class="fas fa-file-alt"></i></a>
       </div>
     </section>
   </div>
+
+  <script>
+    const sections = document.querySelectorAll("section");
+    const observer = new IntersectionObserver(
+      entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    sections.forEach(section => observer.observe(section));
+  </script>
 </body>
 </html>
