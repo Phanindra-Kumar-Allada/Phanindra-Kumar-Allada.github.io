@@ -5,7 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Phanindra Kumar Allada</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 <body>
   <nav>
@@ -27,7 +30,10 @@
     <section id="about">
       <h2>About Me</h2>
       <p>
-        I’m a passionate Robotics Software Engineer driven by curiosity and purpose. My journey began with building fire-fighting bots and has led me to work on cutting-edge problems in motion planning, perception, and real-time autonomy. From field robotics to intelligent automation, I enjoy solving real-world challenges with code, sensors, and a systems mindset. I thrive in collaborative environments, seek meaningful impact, and constantly explore new ideas at the intersection of robotics and software.
+        I’m a passionate Robotics Software Engineer driven by curiosity and purpose.
+        My journey began with fire-fighting bots and grew into building autonomous
+        systems at scale. I thrive at the intersection of real-world robotics and
+        intelligent software.
       </p>
     </section>
 
@@ -42,33 +48,34 @@
     <section id="experience">
       <h2>Experience</h2>
       <p><strong>Uhnder Inc. (via MulticoreWare)</strong><br />
-      Perception Software Engineer<br />
-      <em>Jan 2023 – Dec 2023</em><br />
-      - Developed occupancy grid mapping from digital radar and DBSCAN clustering for object modeling.<br />
-      - Built annotation tools and ROS wrappers to validate sensor fusion performance.<br />
-      - Integrated 3D radar features for multipath mitigation and robust perception.</p>
+      Perception Software Engineer | Jan 2023 – Dec 2023<br />
+      - Built radar-based occupancy grids and DBSCAN clustering.<br />
+      - Developed tools for annotation and multi-sensor validation in ROS.</p>
 
       <p><strong>Arizona State University</strong><br />
-      Research Assistant & Robotics Developer<br />
-      <em>Aug 2022 – May 2024</em><br />
-      - Worked on autonomous navigation systems and lightweight robotic platforms.<br />
-      - Developed exercise pose estimation and barcode-based production automation systems.</p>
+      Research Assistant | Aug 2022 – May 2024<br />
+      - Worked on lightweight autonomous robots and exercise-tracking systems.</p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
       <div class="projects-grid">
         <div class="project">
-          <video src="media/paripreksya.mp4" autoplay loop muted></video>
-          <p><strong>Paripreksya</strong><br />Search and Rescue Robot with LiDAR, Camera, and Flipper Arms</p>
+          <video autoplay loop muted playsinline>
+            <source src="videos/paripreksya.mp4" type="video/mp4" />
+          </video>
+          <p><strong>Paripreksya</strong><br />
+            Terrain-adaptive Search and Rescue robot with flippers, LiDAR & camera fusion.</p>
         </div>
         <div class="project">
-          <img src="media/pose_estimation.gif" alt="Pose Estimation" />
-          <p><strong>Real-time Pose Estimation</strong><br />Exercise recognition using MobileVNet and OpenCV</p>
+          <img src="images/pose_estimation.gif" alt="Pose Estimation" />
+          <p><strong>Pose Estimation</strong><br />
+            Motion tracking with MobileVNet + OpenCV for real-time fitness analysis.</p>
         </div>
         <div class="project">
-          <img src="media/neural_astar.gif" alt="Neural A* Path Planning" />
-          <p><strong>Adaptive Path Planning</strong><br />Neural A* search for cluttered environments</p>
+          <img src="images/neural_astar.gif" alt="Neural A* Path Planning" />
+          <p><strong>Neural A* Path Planning</strong><br />
+            ML-augmented pathfinding in cluttered environments with PyTorch + A*.</p>
         </div>
       </div>
     </section>
@@ -89,28 +96,23 @@
     <section id="contact">
       <h2>Contact</h2>
       <div class="contact-icons">
-        <a href="mailto:phanindra@example.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a>
-        <a href="https://linkedin.com/in/phanindra-kumar" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/Phanindra-Kumar" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-        <a href="https://scholar.google.com/phanindra" target="_blank" title="Google Scholar"><i class="fas fa-graduation-cap"></i></a>
-        <a href="resume/Phanindra_Kumar_Allada_Resume.pdf" target="_blank" title="Resume"><i class="fas fa-file-alt"></i></a>
+        <a href="mailto:phanindrakumarallada@gmail.com" target="_blank" title="Email">
+          <i class="fas fa-envelope fa-2x"></i>
+        </a>
+        <a href="https://linkedin.com/in/phanindra-kumar" target="_blank" title="LinkedIn">
+          <i class="fab fa-linkedin fa-2x" style="color:#0a66c2;"></i>
+        </a>
+        <a href="https://github.com/Phanindra-Kumar" target="_blank" title="GitHub">
+          <i class="fab fa-github fa-2x" style="color:#000;"></i>
+        </a>
+        <a href="https://scholar.google.com/citations?user=YOUR_ID" target="_blank" title="Google Scholar">
+          <i class="fas fa-graduation-cap fa-2x"></i>
+        </a>
+        <a href="resume/Phanindra_Kumar_Allada_Resume.pdf" target="_blank" title="Resume">
+          <i class="fas fa-file-alt fa-2x"></i>
+        </a>
       </div>
     </section>
   </div>
-
-  <script>
-    const sections = document.querySelectorAll("section");
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-    sections.forEach(section => observer.observe(section));
-  </script>
 </body>
 </html>
